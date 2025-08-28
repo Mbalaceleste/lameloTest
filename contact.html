@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Formulaire d'inscription</h2>
+
+  <form action="/traitement" method="post">
+    
+    <!-- Champ texte -->
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+    <br><br>
+
+    <!-- Champ email -->
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Champ mot de passe -->
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Boutons radio -->
+    <p>Sexe :</p>
+    <input type="radio" id="homme" name="sexe" value="Homme">
+    <label for="homme">Homme</label>
+    <input type="radio" id="femme" name="sexe" value="Femme">
+    <label for="femme">Femme</label>
+    <br><br>
+
+    <!-- Liste déroulante -->
+    <label for="pays">Pays :</label>
+    <select id="pays" name="pays">
+      <option value="fr">France</option>
+      <option value="us">États-Unis</option>
+      <option value="cd">Congo</option>
+    </select>
+    <br><br>
+
+    <!-- Zone de texte -->
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+    <br><br>
+
+    <!-- Bouton d’envoi -->
+    <button type="submit">Envoyer</button>
+    
+  </form>
+</body>
+</html>
